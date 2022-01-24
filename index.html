@@ -8,16 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="titulo">Não esqueça! Agende</h1>
-        <section class="card-login">
-            <h2 class="titulo-card">Faça seu login</h2>
-            <label class="descricao-input" for="input-email">Email</label>
-            <input class="input email" for="input-email" type="email" placeholder="seu-email@email.com">
-
-            <label class="descricao-input" for="input-senha">Senha</label>
-            <input class="input senha" for="input-senha" type="password" placeholder="Insira sua senha">
+    <section class="cabecalho">
+        <section class="apresentacao">
+            <h1 class="titulo">Não esqueça! Agende</h1>
+            <img src="img/check.svg" alt="Logo da pagina" class="check">
         </section>
-    </header>
+        <section class="card-login">
+            <form class="formulario">
+                <h2 class="titulo-card">Faça seu login</h2>
+                <label class="descricao-input" for="input-email">Email</label>
+                <input class="input email" for="input-email" type="email" placeholder="seu-email@email.com">
+
+                <label class="descricao-input" for="input-senha">Senha</label>
+                <input class="input senha" for="input-senha" type="password" placeholder="Insira sua senha">
+                <a href="#" class="esqueci">Esqueci minha senha</a>
+            </form>
+            <section class="botoes-login">
+                <input class="botao" type="submit" value="Login">
+                <input class="botao" type="submit" value="Cadastrar">
+            </section>
+        </section>
+    </section>
 </body>
 </html>

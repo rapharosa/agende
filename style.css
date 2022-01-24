@@ -27,11 +27,22 @@ body {
     align-items: center;
 }
 
+.apresentacao {
+    height: 50vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+
 .titulo{
     color: var(--amarelo);
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
+}
+
+.check {
+    display: block;
 }
 
 .card-login {
@@ -42,8 +53,14 @@ body {
     height: 80vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
     align-content: space-between;
-    justify-content: center;
+    
 }
 
 .titulo-card {
@@ -61,24 +78,66 @@ body {
 }
 
 .input {
+    background-color: var(--branco);
     align-self: center;
     text-align: center;
     font-size: 1.25rem;
     border-radius: 10px;
-    margin: 2vh;
+    margin: 0.5vh;
     width: 35vw;
     height: 5vh;
-    border-color: var(--amarelo);
+    border-color: var(--azul-escuro);
 }
 
 .email {
-    background-image: url(user.svg);
+    background-image: url(img/user.svg);
     background-repeat: no-repeat;
     background-position: 10% center;
 }
 
 .senha {
-    background-image: url(key.svg);
+    background-image: url(img/key.svg);
     background-repeat: no-repeat;
     background-position: 10% center;
+}
+
+.esqueci {
+    padding-top: 1vh;
+    align-self: center;
+    color: var(--azul-escuro);
+    font-size: 2vw;
+}
+
+.botoes-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.botao {
+    text-align: center;
+    align-items: center;
+    margin: 1vh;
+    width: 100%;
+    height: 5vh;
+    font-size: 2vw;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    border-color: var(--azul-escuro);
+    box-shadow: 3px 1px 1px var(--azul-escuro);
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.botao:hover {
+    color: var(--amarelo);
+    background-color: var(--azul-escuro);
+}
+
+.cadastro {
+    font-size: 3vw;
+    color: var(--azul-escuro);
 }
