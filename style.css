@@ -15,59 +15,44 @@
 
 
 
-body {
+.corpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
     font-size: 100%;
     background-color: var(--azul-escuro);
-}
-
-.cabecalho {
-    padding: 3vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.apresentacao {
-    height: 50vw;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-}
-
-.titulo{
-    color: var(--amarelo);
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.check {
-    display: block;
 }
 
 .card-login {
     border-radius: 20px;
     padding: 1.5vw;
     background-color: var(--creme);
-    width: 40%;
+    width: 80%;
     height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+}
+
+.logo-card {
+    width: 30%;
+    margin: 1vh;
+    align-self: center;
+}
+
+.titulo-card {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1vh;
+    color: var(--azul-escuro);
+    font-weight: 400;
+    border-bottom: solid 1px var(--azul-escuro);
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
     align-content: space-between;   
-}
-
-.titulo-card {
-    color: var(--azul-escuro);
-    padding-left: 1vw;
-    font-weight: 400;
-    font-size: 3rem;
-    align-self: center;
 }
 
 .descricao-input {
@@ -83,7 +68,7 @@ body {
     font-size: 1.25rem;
     border-radius: 10px;
     margin: 0.5vh;
-    width: 35vw;
+    width: 90%;
     height: 5vh;
     border-color: var(--azul-escuro);
 }
@@ -91,20 +76,20 @@ body {
 .email {
     background-image: url(img/user.svg);
     background-repeat: no-repeat;
-    background-position: 10% center;
+    background-position: 2vw center;
 }
 
 .senha {
     background-image: url(img/key.svg);
     background-repeat: no-repeat;
-    background-position: 10% center;
+    background-position: 2vw center;
 }
 
 .esqueci {
-    padding-top: 1vh;
+    margin: 1vw;
     align-self: center;
     color: var(--azul-escuro);
-    font-size: 2vw;
+    font-size: 3vh;
 }
 
 .botoes-login {
@@ -112,13 +97,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 10vw;
 }
 
 .botao {
     align-items: center;
     width: 100%;
-    font-size: 2vw;
+    height: 5vh;
+    font-size: 3vh;
     color: var(--azul-escuro);
     background-color: var(--branco);
     border-color: var(--azul-escuro);
@@ -127,15 +113,49 @@ body {
     transition: 0.5s;
     cursor: pointer;
 }
-
 .botao:hover {
     color: var(--amarelo);
     background-color: var(--azul-escuro);
 }
 
 .cadastro {
+    margin-top: 4vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vh;
     color: var(--azul-escuro);
     border: solid 2px var(--azul-escuro);
+}
+.cadastro:hover {
+    color: var(--amarelo);
+    background-color: var(--azul-escuro);
+}
+
+.apresentacao {
+    display: none;
+}
+
+@media screen and (min-width: 426px) {
+    .corpo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card-login{
+        width: 50%;
+        align-self: flex-end;
+    }
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .titulo-pagina {
+        margin-left: 2vw;
+        text-align: center;
+        font-size: 8vw;
+        color: var(--amarelo);
+    }
+    .logo {
+        width: 3vw;
+    }
 }
