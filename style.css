@@ -155,7 +155,7 @@
         font-size: 8vw;
         color: var(--amarelo);
     }
-    .logo {
-        width: 3vw;
+    .logo-pagina {
+        margin: 3vw;
     }
 }

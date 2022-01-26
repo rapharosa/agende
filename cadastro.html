@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="style-cadastro.css"><link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <form action="" class="formulario-cadastro">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+<body class="corpo-form">
+    <header class="cabecalho-cadastro">
+        <img src="img/check-yellow.svg" alt="Logo pagina" class="logo">
+        <a href="index.html" class="voltar">Voltar</a>
+    </header>
+    <form class="formulario-cadastro">
+        <label class="label-cadastro" for="nome">Nome</label>
+        <input class="input-cadastro nome" type="text" name="nome" placeholder="Digite seu nome completo" required>
 
-        <label for="Senha">Crie uma senha</label>
-        <input type="password"  name="senha" placeholder="Digite sua senha" required>
+        <label class="label-cadastro" for="Senha">Crie uma senha</label>
+        <input class="input-cadastro senha" type="password"  name="senha" placeholder="Digite sua senha" required>
 
-        <label for="data">Data de nacimento</label>
-        <input type="date" name="data" required>
+        <label class="label-cadastro" for="data">Data de nacimento</label>
+        <input class="data" type="date" name="data" required>
 
-        <label for="nome">Email</label>
-        <input type="email" name="email" placeholder="Digite seu email" required>
+        <label class="label-cadastro" for="nome">Email</label>
+        <input class="input-cadastro email" type="email" name="email" placeholder="Digite seu email" required>
 
-    </form>
-    
+    </form> 
 </body>
 </html>
