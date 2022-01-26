@@ -51,7 +51,7 @@
 }
 
 .input-cadastro {
-    font-size: 3vw;
+    font-size: 5vw;
     height: 8vw;
     width: 100%;
 }
@@ -69,7 +69,8 @@
 }
 
 .data {
-    font-size: 3vw;
+    font-size: 5vw;
+    color: var(--azul-escuro);
     text-align: center;
     height: 8vw;
     width: 100%;
