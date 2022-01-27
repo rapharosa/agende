@@ -54,18 +54,26 @@
     font-size: 5vw;
     height: 8vw;
     width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.input-cadastro:hover {
+    scale: (.5);
 }
 
 .nome {
     background-image: url(img/user.svg);
     background-position: right;
     background-repeat: no-repeat;
+    background-size: 1rem;
 }
 
 .senha {
     background-image: url(img/key.svg);
     background-position: right;
     background-repeat: no-repeat;
+    background-size: 1rem;
 }
 
 .data {
@@ -80,4 +88,68 @@
     background-image: url(img/mail.svg);
     background-position: right;
     background-repeat: no-repeat;
+    background-size: 1rem;
+}
+
+.enviar-cadastro {
+    margin-top: 5vw;
+    width: 25%;
+    height: 15%;
+    border-radius: 10px;
+    align-self: center;
+    font-size: 3vw;
+    color: var(--amarelo);
+    background-color: var(--azul-escuro);
+    border: solid 2px var(--creme);
+}
+
+@media screen and (min-width: 426px) {
+    .logo {
+        width: 15%;
+    }
+    
+    .voltar {
+        font-size: 3vw;
+        color: var(--amarelo);
+        width: auto;
+        transition: .5s;
+    }
+
+    .voltar:hover {
+        transform: scale(1.1);
+        color: var(--creme);
+        background-color: var(--azul-escuro);
+    }
+
+    .formulario-cadastro {
+        align-items: center;
+    }
+
+    .input-cadastro {
+        font-size: 2vw;
+        height: 3vw;
+        width: 60%;
+    }
+
+    .data {
+        font-size: 2vw;
+        height: 3vw;
+        width: 60%;
+    }
+
+    .label-cadastro {
+        font-size: 2vw;
+        align-self: flex-start;
+        padding-left: 19vw;
+    }
+
+    .enviar-cadastro {
+        transition: .5s;
+    }
+
+    .enviar-cadastro:hover {
+        color: var(--azul-escuro);
+        background-color: var(--amarelo);
+        transform: scale(1.1);
+    }
 }

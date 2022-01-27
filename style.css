@@ -76,13 +76,15 @@
 .email {
     background-image: url(img/user.svg);
     background-repeat: no-repeat;
-    background-position: 2vw center;
+    background-position: 1.25vw center;
+    background-size: 1.25rem;
 }
 
 .senha {
     background-image: url(img/key.svg);
     background-repeat: no-repeat;
-    background-position: 2vw center;
+    background-position: 1.25vw center;
+    background-size: 1.25rem;
 }
 
 .esqueci {
@@ -142,7 +144,7 @@
     }
     .card-login{
         width: 50%;
-        align-self: flex-end;
+        align-self: flex-start;
     }
     .apresentacao {
         display: flex;
